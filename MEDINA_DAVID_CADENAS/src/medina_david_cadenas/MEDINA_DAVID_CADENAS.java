@@ -30,15 +30,33 @@ public class MEDINA_DAVID_CADENAS {
     //Se necesita encontrar la cantidad de palabras
             case 1:
                char carrepet = ' ';
-               int [] contador = newInt[256];
+               int [] contador = new int[256];
                
                int i = 0;
                
             System.out.print("Bienvenido a CADENAS\nSi quiere regresar al menu presione s. \nIngrese una palabra porfavor: ");
             String Cadena = entrada.nextLine().toLowerCase();
             
-            break;
-
+            while (i<Cadena.length()){
+             char Caracter  = Cadena.charAt(i);
+             contador[Caracter]++;
+             i++;
+            }
+             
+            int Maxrep = 0;
+            char Carrep = ' ';
+            
+            i=0;
+            while (i< contador.length){
+                if (contador[i]>Maxrep){
+                    Maxrep = contador[i];
+                    Carrep= (char) i;
+                }
+                i++;
+            }
+                System.out.println("El caracter mas repetidor es: "+Carrep);
+                    
+            
             
              case 2:
                  
