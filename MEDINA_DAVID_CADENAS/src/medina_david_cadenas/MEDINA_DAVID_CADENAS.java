@@ -20,28 +20,33 @@ public class MEDINA_DAVID_CADENAS {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner entrada= new Scanner(System.in);
+        entrada.nextLine();
+                
         
-        while(true){
-            
+   
+       while(true){     
         System.out.print("BIENVENIDO A MENU EJERCICIOS\n1.Cadenas\n2.Notas\n3.Clases\n4.Salir\nIngrese una opcion porfavor: ");
-        int Op1 = entrada.nextInt();
-        
-        switch(Op1){
-    //Se necesita encontrar la cantidad de palabras
+        int Op = entrada.nextInt();
+        switch(Op){
+    
             case 1:
                char carrepet = ' ';
                int [] contador = new int[256];
                
                int i = 0;
-               
+             while(true){  
             System.out.print("Bienvenido a CADENAS\nSi quiere regresar al menu presione s. \nIngrese una palabra porfavor: ");
-            String Cadena = entrada.nextLine().toLowerCase();
+            String Cadena = entrada.next().toLowerCase();
             
+              if (Cadena.equals("s")) {
+                        break;
+                    }
             while (i<Cadena.length()){
              char Caracter  = Cadena.charAt(i);
              contador[Caracter]++;
              i++;
             }
+            
              
             int Maxrep = 0;
             char Carrep = ' ';
@@ -51,52 +56,23 @@ public class MEDINA_DAVID_CADENAS {
                 if (contador[i]>Maxrep){
                     Maxrep = contador[i];
                     Carrep= (char) i;
+                          
                 }
                 i++;
             }
-                System.out.println("El caracter mas repetidor es: "+Carrep);
-                    
-            
-            
-             case 2:
-                 
-             while (true){    
-             System.out.println("Bienvenido a clases\nIngrese las notas que desea promediar\nNota parcial 1: ");
-             System.out.println("Nota parcial 2: ");
-             int Nota1 = entrada.nextInt();
-             
-             if (Nota1>0 && Nota1<100){
-                 
-                 continue;
+                System.out.println("El caracter mas repetidor es: "+Carrep+"Un total de "+Maxrep);
+                System.out.println("VOLVIENDO AL MENU....");
              }
-                 
-                 
-             System.out.println("Nota parcial 2: ");
-             int Nota2 = entrada.nextInt();
-              if (Nota2>0 && Nota2<100){
-                 
-                 
-             }
-             System.out.println("Nota parcial 3: ");
-             int Nota3 = entrada.nextInt();
-             if (Nota3>0 && Nota3<100){
-                 
-                 continue;
-             }
-
-             
-             
-                break;
-             }
-              case 3:
+            case 2:
                 
-      
-            }
+                    
+   
             
-        
-    }
+        }
+    } 
+       
       
     }
     
 }
-}
+
