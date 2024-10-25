@@ -61,18 +61,37 @@ public class MEDINA_DAVID_CADENAS {
                 i++;
             }
                 System.out.println("El caracter mas repetidor es: "+Carrep+"Un total de "+Maxrep);
+               
+                    
+             
                 System.out.println("VOLVIENDO AL MENU....");
              }
             case 2:
+                int cantidadnotas;
                 
-                    
-   
-            
-        }
-    } 
-       
-      
+                do{
+                System.out.println("Ingrese la cantidad de notas: ");
+                   cantidadnotas=entrada.nextInt();
+                
+                   if (cantidadnotas<0){
+                       System.out.println("Porfavor ingrese un valor posito.");
+                   }while (cantidadnotas <= 0);
+
+        double sumaNotas = 0;
+        double notaMayor = 0; // Inicializar con 0
+        double notaMenor = 100;
+            for (int i = 0; i< cantidad; i++){
+                if nota =entrada.nextDouble();
+                
+            }
+                
+                }
+                }
+       }
     }
-    
 }
+     
+    
+    
+
 
