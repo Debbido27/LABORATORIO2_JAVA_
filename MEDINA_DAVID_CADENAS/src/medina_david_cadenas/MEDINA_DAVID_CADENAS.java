@@ -36,17 +36,21 @@ public class MEDINA_DAVID_CADENAS {
             System.out.print("Bienvenido a CADENAS\nSi quiere regresar al menu presione s. \nIngrese una palabra porfavor: ");
             String Cadena = entrada.next();
             
-            
+            break;
 
-            if ("s".equals(Cadena)){
-                
-                break;
             
              case 2:
              System.out.println("Bienvenido a clases\nIngrese las notas que desea promediar\nNota parcial 1: ");
              System.out.println("Nota parcial 2: ");
+             int Nota1 = entrada.nextInt();
+             
              System.out.println("Nota parcial 2: ");
+             int Nota2 = entrada.nextInt();
+
              System.out.println("Nota parcial 3: ");
+             int Nota3 = entrada.nextInt();
+
+             
              
                 break;
                 
