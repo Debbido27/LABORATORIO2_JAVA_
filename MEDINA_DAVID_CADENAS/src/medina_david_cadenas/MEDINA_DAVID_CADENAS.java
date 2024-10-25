@@ -81,15 +81,24 @@ public class MEDINA_DAVID_CADENAS {
         double notaMayor = 0; // Inicializar con 0
         double notaMenor = 100;
             for (int i = 0; i< cantidad; i++){
-                if nota =entrada.nextDouble();
+                double nota;
+                do{
+                    System.out.println("Nota."+(i+1)+":");
+                    nota = entrada.nextDouble();
+                    
+                    if (nota<0|| nota>100){
+                        System.out.println("Solo se aceptan en el rango: ");
+                        
+                    }
                 
-            }
                 
-                }
-                }
+            
+                
+                
+                
        }
     }
-}
+                }            
      
     
     
