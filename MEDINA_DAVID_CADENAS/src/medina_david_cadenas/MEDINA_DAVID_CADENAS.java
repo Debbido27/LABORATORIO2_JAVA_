@@ -30,30 +30,46 @@ public class MEDINA_DAVID_CADENAS {
     //Se necesita encontrar la cantidad de palabras
             case 1:
                char carrepet = ' ';
-               int contador = 0;
+               int [] contador = newInt[256];
+               
                int i = 0;
                
             System.out.print("Bienvenido a CADENAS\nSi quiere regresar al menu presione s. \nIngrese una palabra porfavor: ");
-            String Cadena = entrada.next();
+            String Cadena = entrada.nextLine().toLowerCase();
             
             break;
 
             
              case 2:
+                 
+             while (true){    
              System.out.println("Bienvenido a clases\nIngrese las notas que desea promediar\nNota parcial 1: ");
              System.out.println("Nota parcial 2: ");
              int Nota1 = entrada.nextInt();
              
+             if (Nota1>0 && Nota1<100){
+                 
+                 continue;
+             }
+                 
+                 
              System.out.println("Nota parcial 2: ");
              int Nota2 = entrada.nextInt();
-
+              if (Nota2>0 && Nota2<100){
+                 
+                 
+             }
              System.out.println("Nota parcial 3: ");
              int Nota3 = entrada.nextInt();
+             if (Nota3>0 && Nota3<100){
+                 
+                 continue;
+             }
 
              
              
                 break;
-                
+             }
               case 3:
                 
       
